@@ -41,6 +41,7 @@ async fn get_version(instance: &Instance) -> (&Instance, i64) {
         Ok(res) => res.unwrap_or_default(),
         _ => 0i64,
     };
+    print!("hhhhhhh {}", content);
     (instance, content)
 }
 
